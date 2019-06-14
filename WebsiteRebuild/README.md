@@ -1,27 +1,40 @@
-# WebsiteRebuild
+# _MarketPlace_
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+#### By _**Colton Lacey**_
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+_A program will allow user to search a market of thing stuff for sale by other users._
 
-## Code scaffolding
+| Behavior | Input | Output |
+| ------------- |:-------------:| -----:|
+| The program should allow user look though the market of items for sale |
+| The program should allow user to click on items and view there information |
+| The user should be able to sort items by price |
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setup/Installation Requirements
 
-## Build
+* _Clone project from github_
+* _view code in text editor if necessary_
+* _any text inside quotations ("") should be performed inside your terminal._
+* _install packages with "npm install"_
+* _"npm run start"_
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Known Bugs
 
-## Running unit tests
+_None Known_
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Support and contact details
 
-## Running end-to-end tests
+_No support offered_
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Technologies Used
 
-## Further help
+_JS_
+_Node JS_
+_Angular_
+_typescript_
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### License
+
+Copyright <2019> <Colton Lacey>
