@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { TaskLisComponent } from './task-lis/task-lis.component';
 import { EditTaskComponent } from './edit-task/edit-task.component';
 import { NewTaskComponent } from './new-task/new-task.component';
+import { ItemListComponent } from './item-list/item-list.component';
+import { EditItemComponent } from './edit-item/edit-item.component';
+import { NewItemComponent } from './new-item/new-item.component';
 
 
 @NgModule({
@@ -13,7 +16,10 @@ import { NewTaskComponent } from './new-task/new-task.component';
     AppComponent,
     TaskLisComponent,
     EditTaskComponent,
-    NewTaskComponent
+    NewTaskComponent,
+    ItemListComponent,
+    EditItemComponent,
+    NewItemComponent
   ],
   imports: [
     BrowserModule
