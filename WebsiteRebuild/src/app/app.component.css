@@ -1,0 +1,19 @@
+.title-area {
+  text-align: left;
+}
+body{
+  background-image: url("https://www.papetroleum.org/wp-content/uploads/2016/03/tradeshow-background.png");
+  height: 100%;
+}
+.title{
+  text-align: center;
+  color: white;
+}
+.body{
+color: white;
+}
+
+.img {
+  height: 100px;
+  width: 100px;
+}

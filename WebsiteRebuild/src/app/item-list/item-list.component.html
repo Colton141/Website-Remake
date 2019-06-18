@@ -1,7 +1,17 @@
-<p>
-  item-list works!
-</p>
 <ul>
-  <li  *ngFor="let currentItem of childItemList">{{currentItem.description}} <button (click)="editItem(currentItem)">Edit!</button></li>
+<div class="row">
+  <div class="col-md-6">
+  <li  *ngFor="let currentItem of childItemList" (click)="open(currentItem)">{{currentItem.name}} </li>
+  </div>
+  <div class="col-md-6">
+    <div *ngIf="selectedItem">
+      <h2>Description</h2>
+      <p>Item: {{selectedItem.name}}</p>
+      <p>Decription: {{selectedItem.description}}</p>
+      <p>Price: {{selectedItem.price}}</p>
+      <p>Category: {{selectedItem.clas}}</p>
+      <p>Contact: {{selectedItem.contact}}</p>
+    </div>
+  </div>
+</div>
 </ul>
-<app-item-list [childItemList]="masterItemList"></app-item-list>
