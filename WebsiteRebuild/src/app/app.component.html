@@ -29,25 +29,10 @@
   <hr>
   <h1>Listings!</h1>
   <button type="button" class="btn btn-success" name="button">Sort by Price</button>
-    <ul>
-      <div class="row">
-        <div class="col-md-6">
-          <p *ngFor="let item of items" (click)="open(item)">{{item.name}}</p>
-          <app-item-list [childItemList]="masterItemList"></app-item-list>
-        </div>
-        <div class="col-md-6">
-          <div *ngIf="selectedItem">
-            <h2>Description</h2>
-            <p>Item: {{selectedItem.name}}</p>
-            <p>Decription: {{selectedItem.description}}</p>
-            <p>Price: {{selectedItem.price}}</p>
-            <p>Category: {{selectedItem.clas}}</p>
-            <p>Contact: {{selectedItem.contact}}</p>
-            <img src="{{selectedItem.image}}">
-          </div>
-        </div>
-      </div>
-    </ul>
+  <ul>
+
+    <app-item-list [childItemList]="masterItemList"></app-item-list>
+  </ul>
 </div>
 </div>
 </div>
