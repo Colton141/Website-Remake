@@ -1,3 +1,7 @@
 <p>
   item-list works!
 </p>
+<ul>
+  <li  *ngFor="let currentItem of childItemList">{{currentItem.description}} <button (click)="editItem(currentItem)">Edit!</button></li>
+</ul>
+<app-item-list [childItemList]="masterItemList"></app-item-list>

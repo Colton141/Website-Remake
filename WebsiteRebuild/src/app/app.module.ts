@@ -13,9 +13,6 @@ import { NewItemComponent } from './new-item/new-item.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TaskLisComponent,
-    EditTaskComponent,
-    NewTaskComponent,
     ItemListComponent,
     EditItemComponent,
     NewItemComponent
