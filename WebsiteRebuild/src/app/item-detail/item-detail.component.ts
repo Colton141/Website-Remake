@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common';
+import { Item } from '../item-list.model';
 
 @Component({
   selector: 'app-item-detail',
@@ -6,8 +9,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./item-detail.component.css']
 })
 export class ItemDetailComponent implements OnInit {
+    itemId: number = null;
 
-  constructor() { }
+
+  constructor(private route: ActivatedRoute, private location: Location) { }
 
   ngOnInit() {
   }
