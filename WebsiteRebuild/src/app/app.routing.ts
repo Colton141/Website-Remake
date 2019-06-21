@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router'
 import { ItemListComponent } from './item-list/item-list.component';
 import { AboutComponent }   from './about/about.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { EditListComponnent } form './edit-list/edit-list.component';
+import { EditItemComponent } from './edit-item/edit-item.component';
 
 
 const appRoutes: Routes = [
@@ -26,7 +26,7 @@ component: AboutComponent
 
 {
   path: 'itemEdit',
-  component: EditListComponent
+  component: EditItemComponent
 }
 
 ];
