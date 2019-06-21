@@ -15,6 +15,9 @@ export class ItemDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private location: Location) { }
 
   ngOnInit() {
-  }
+    this.route.params.forEach((urlParameters) => {
+     this.itemId = parseInt(urlParameters['id']);
+  });
 
+}
 }
