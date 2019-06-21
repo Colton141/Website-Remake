@@ -4,6 +4,7 @@ import { ItemListComponent } from './item-list/item-list.component';
 import { AboutComponent }   from './about/about.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { EditItemComponent } from './edit-item/edit-item.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
 
 
 const appRoutes: Routes = [
@@ -27,6 +28,11 @@ component: AboutComponent
 {
   path: 'itemEdit',
   component: EditItemComponent
+},
+
+{
+  path: 'item/:id',
+  componenet: ItemDetailComponent
 }
 
 ];
