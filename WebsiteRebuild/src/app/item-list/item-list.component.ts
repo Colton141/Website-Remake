@@ -1,15 +1,17 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input,, OnInit, Output, EventEmitter } from '@angular/core';
 import { Item } from '../models/Items.model';
 import { Router } from '@angular/router';
+import { ItemService } from '../item.service';
 
 @Component({
   selector: 'app-item-list',
   templateUrl: './item-list.component.html',
-  styleUrls: ['./item-list.component.css']
+  styleUrls: ['./item-list.component.css'],
+  providers: [ItemService]
 })
-export class ItemListComponent {
+export class ItemListComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private itemService: ItemService) { }
 
   items: Item[] = [];
 
@@ -21,6 +23,7 @@ export class ItemListComponent {
 
 
   ngOnInit() {
+     this.items = this.itemService.getItems();
   }
   selectedItem = null;
     open(currentItem){
