@@ -11,6 +11,7 @@ import { EditItemComponent } from './edit-item/edit-item.component';
 import { NewItemComponent } from './new-item/new-item.component';
 import { AboutComponent } from './about/about.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
 
 
 export const firebaseConfig = {
@@ -28,7 +29,8 @@ export const firebaseConfig = {
     EditItemComponent,
     NewItemComponent,
     AboutComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
