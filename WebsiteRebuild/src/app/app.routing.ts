@@ -20,12 +20,13 @@ component: AboutComponent
 },
 
 {
-  path: 'itemlist',
+  path: 'itemList',
   component: ItemListComponent
-}
+},
 
 {
-  path: ''
+  path: 'itemEdit',
+  component: EditListComponent
 }
 
 ];
