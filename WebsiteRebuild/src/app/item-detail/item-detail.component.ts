@@ -11,7 +11,6 @@ import { ItemService } from '../item.service';
   providers: [ItemService]
 })
 export class ItemDetailComponent implements OnInit {
-    itemId: number = null;
     itemId: number;
     itemToDisplay: Item;
 
