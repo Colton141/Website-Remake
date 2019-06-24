@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Item } from '../item.model';
+import { Item } from '../models/Items.model';
 
 @Component({
   selector: 'app-admin',
@@ -16,5 +16,6 @@ export class AdminComponent implements OnInit {
   submitForm(name: string, description: string, price: string, clas: string) {
   var newItem: Item = new Item(name, description, price, clas);
   console.log(newItem);
+}
 
 }

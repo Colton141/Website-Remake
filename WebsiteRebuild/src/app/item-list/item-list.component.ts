@@ -1,4 +1,4 @@
-import { Component, Input,, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Item } from '../models/Items.model';
 import { Router } from '@angular/router';
 import { ItemService } from '../item.service';
@@ -15,7 +15,7 @@ export class ItemListComponent implements OnInit {
 
   constructor(private router: Router, private itemService: ItemService) { }
 
-  items: Item[] = [];
+  // items: Item[] = [];
 
     goToDetailPage(clickedItem: Item) {
       this.router.navigate(['items', clickedItem.id])
