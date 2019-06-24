@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireModule } from 'angularfire2';
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { ItemListComponent } from './item-list/item-list.component';
@@ -36,9 +37,11 @@ export const firebaseConfig = {
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule,
-    routing
+     FormsModule,
+     HttpModule,
+     routing,
+     AngularFireModule.initializeApp(firebaseConfig),
+     AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
