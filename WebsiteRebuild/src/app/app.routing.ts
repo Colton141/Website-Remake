@@ -31,10 +31,10 @@ component: AboutComponent
   component: EditItemComponent
 },
 
-// {
-//   path: 'item/:id',
-//   componenet: ItemDetailComponent
-// },
+{
+  path: 'item/:id',
+  component: ItemDetailComponent
+},
 {
   path: 'admin',
   component: AdminComponent

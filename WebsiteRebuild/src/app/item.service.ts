@@ -15,11 +15,8 @@ export class ItemService {
   return this.items;
   }
 
-  getItemById(itemId: number){
-   for (var i = 0; i <= ITEMS.length - 1; i++) {
-     if (ITEMS[i].id === itemId) {
-       return ITEMS[i];
-     }
-   }
+  getItemById(itemId: string){
+    return this.database.object('items/' + itemId);
+
  }
 }

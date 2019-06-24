@@ -17,9 +17,6 @@ export class ItemListComponent implements OnInit {
 
   // items: Item[] = [];
 
-    goToDetailPage(clickedItem: Item) {
-      this.router.navigate(['items', clickedItem.id])
-    }
 
    @Output() clickSender = new EventEmitter();
 
@@ -27,6 +24,12 @@ export class ItemListComponent implements OnInit {
   ngOnInit() {
      this.items = this.itemService.getItems();
   }
+
+  goToDetailPage(clickedItem) {
+    this.router.navigate(['items', clickedItem.$key]);
+  }
+
+
   selectedItem = null;
     open(currentItem){
       this.selectedItem = currentItem;

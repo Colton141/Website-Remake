@@ -1,6 +1,7 @@
-
-  <div>
-    <h3>{{itemToDisplay.title}}</h3>
-    <h4>{{itemToDisplay.artist}}</h4>
-    <p>{{itemToDisplay.description}}</p>
-  </div>
+<div>
+  <h3>{{(itemToDisplay | async)?.name}}</h3>
+  <h3>{{(itemToDisplay | async)?.description}}</h3>
+  <h3>{{(itemToDisplay | async)?.price}}</h3>
+  <h3>{{(itemToDisplay | async)?.clas}}</h3>
+  <h3>{{(itemToDisplay | async)?.contact}}</h3>
+</div>
