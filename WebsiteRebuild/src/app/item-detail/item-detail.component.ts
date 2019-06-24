@@ -12,6 +12,8 @@ import { ItemService } from '../item.service';
 })
 export class ItemDetailComponent implements OnInit {
     itemId: number = null;
+    itemId: number;
+    itemToDisplay: Item;
 
 
   constructor(private route: ActivatedRoute, private location: Location, private itemService: ItemService) { }
@@ -20,6 +22,6 @@ export class ItemDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
      this.itemId = parseInt(urlParameters['id']);
   });
-
+    this.itemToDisplay = this.itemService.getItemById(this.itemId)
 }
 }
