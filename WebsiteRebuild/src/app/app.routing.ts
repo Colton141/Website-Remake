@@ -5,6 +5,7 @@ import { AboutComponent }   from './about/about.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { EditItemComponent } from './edit-item/edit-item.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
+import { AdminComponent }   from './admin/admin.component';
 
 
 const appRoutes: Routes = [
@@ -33,6 +34,10 @@ component: AboutComponent
 {
   path: 'item/:id',
   componenet: ItemDetailComponent
+},
+{
+  path: 'admin',
+  component: AdminComponent
 }
 
 ];
